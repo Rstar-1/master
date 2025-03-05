@@ -566,6 +566,35 @@ input,
     text-decoration: none;
   }
 }
+
+.h-450px {
+  width: 100% !important;
+  height: 450px !important;
+}
+.h-500px {
+  width: 100% !important;
+  height: 500px !important;
+}
+.h-600px {
+  width: 100% !important;
+  height: 600px !important;
+}
+
+.filter-1 {
+  filter: none !important;
+}
+.filter-2 {
+  filter: grayscale(90%) !important;
+}
+.filter-3 {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, var(--primary2)),
+    color-stop(100%, var(--white))
+  ) !important;
+}
 /* ======================= End-Animate ======================= */
 
 /* ======================= Start-NavFoot ======================= */
@@ -599,12 +628,18 @@ p {
   opacity: 0;
 }
 .h-image {
-  height: 500px !important;
+  height: 450px !important;
   @media (max-width: 912px) and (min-width: 641px) {
     height: 400px !important;
   }
   @media (max-width: 640px) {
     height: 350px !important;
   }
+}
+.bg_hero {
+  background: url("https://www.primefaces.org/cdn/primereact/images/layout/pattern.png"),
+    radial-gradient(50% 50% at center top, #e9e7fd -50%, #fff 100%) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* ======================= End-Maincss ======================= */

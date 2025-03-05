@@ -18,7 +18,7 @@ const Navbar = () => {
           <h1 className="font-500 fsize20 textgray my1">
             Bara<span className="textprimary mlpx2">Singha</span>
           </h1>
-          <div className="flex items-center gap-12">
+          <div className="flex md-hidden sm-hidden items-center gap-12">
             {NavData.map((e, index) => (
               <NavLink
                 key={index}
@@ -36,7 +36,7 @@ const Navbar = () => {
             round="sm"
             size="sm"
             animation="v6"
-            className="font-400"
+            className="font-400 md-hidden sm-hidden"
           />
         </div>
       </div>

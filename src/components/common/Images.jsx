@@ -1,8 +1,7 @@
 import React from "react";
-import Image from "next/image";
 
 const Images = ({
-  imgclass = "",
+  imgfit = "",
   imgHeight = "",
   imgScale = "",
   imgRound = "",
@@ -30,17 +29,17 @@ const Images = ({
     v2: "rounded-10",
     v3: "rounded-full",
   };
-  const imgStructure = `${imgClasses[imgclass] || ""} ${
+  const imgStructure = `${imgClasses[imgfit] || ""} ${
     imgHeights[imgHeight] || ""
   } ${imgscales[imgScale] || ""} ${imgrounds[imgRound] || ""} ${
     className || ""
   }`;
 
   return (
-    <Image
+    <img
       src={source}
       alt="Banner"
-      className={`hero_img ${imgStructure}`}
+      className={`${imgStructure}`}
       id={secID}
     />
   );

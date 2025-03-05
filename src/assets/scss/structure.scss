@@ -20406,4 +20406,44 @@
 .leading-m {
   line-height: 30px !important;
 }
+@media (max-width: 912px) and (min-width: 641px) {
+.leading-x {
+  line-height: 99px !important;
+}
+.leading-h {
+  line-height: 90px !important;
+}
+.leading-l {
+  line-height: 75px !important;
+}
+.leading-sm {
+  line-height: 40px !important;
+}
+.leading-s {
+  line-height: 38px !important;
+}
+.leading-m {
+  line-height: 30px !important;
+}
+}
+@media (max-width: 640px) {
+.leading-x {
+  line-height: 46px !important;
+}
+.leading-h {
+  line-height: 45px !important;
+}
+.leading-l {
+  line-height: 45px !important;
+}
+.leading-sm {
+  line-height: 18px !important;
+}
+.leading-s {
+  line-height: 20px !important;
+}
+.leading-m {
+  line-height: 20px !important;
+}
+}
 /* ======================= End-Common ======================= */

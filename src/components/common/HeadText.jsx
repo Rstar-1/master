@@ -13,11 +13,14 @@ const HeadText = ({
   className = "",
 }) => {
   const SizeClasses = {
-    xxl: "font-500 fsize70 my1 leading-x",
-    xl: "font-500 fsize60 my1 leading-h",
-    lg: "font-500 fsize50 my1 leading-l",
-    md: "font-500 fsize36 my1",
-    sm: "font-500 fsize28 my1",
+    xxlsm: "font-600 fsize70 md-fsize38 sm-fsize30 my1 leading-x",
+    xlsm: "font-600 fsize60 md-fsize38 sm-fsize30 my1 leading-h",
+    lgsm: "font-600 fsize52 md-fsize38 sm-fsize30 my1 leading-l",
+    xxl: "font-600 fsize70 md-fsize38 sm-fsize30 my1 leading-x",
+    xl: "font-600 fsize60 md-fsize38 sm-fsize30 my1 leading-h",
+    lg: "font-600 fsize52 md-fsize38 sm-fsize30 my1 leading-l",
+    md: "font-500 fsize36 md-fsize26 sm-fsize20 my1",
+    sm: "font-500 fsize28 md-fsize24 sm-fsize18 my1",
   };
   const ColorClasses = {
     dark: "textdark",
@@ -41,8 +44,8 @@ const HeadText = ({
     info: "textinfo",
     warning: "textwarning",
     v1: "textprimary",
-    v2: "textwhite px12 py2 rounded-5 bgprimary",
-    v3: "textwhite px12 py2 rounded-5 bgsecondary",
+    v2: "textwhite px20 py2 rounded-5 bgprimary",
+    v3: "textwhite px20 py2 rounded-5 bgsecondary",
     v4: "textprimary underline",
   };
   const headClass = `${SizeClasses[size] || ""} ${
