@@ -18,6 +18,9 @@ const Images = ({
     v1: "h-450px",
     v2: "h-500px",
     v3: "h-600px",
+    v4: "h-350px",
+    v5: "h-300px",
+    v6: "h-250px",
   };
   const imgscales = {
     v1: "filter-1",

@@ -2,9 +2,9 @@ import React from "react";
 
 const HeadText = ({
   text,
-  text2,
-  text3,
-  heading,
+  text2 = "",
+  text3 = "",
+  heading = "",
   secid = "",
   size = "",
   color = "",
@@ -13,14 +13,14 @@ const HeadText = ({
   className = "",
 }) => {
   const SizeClasses = {
-    xxlsm: "font-600 fsize70 md-fsize38 sm-fsize30 my1 leading-x",
-    xlsm: "font-600 fsize60 md-fsize38 sm-fsize30 my1 leading-h",
-    lgsm: "font-600 fsize52 md-fsize38 sm-fsize30 my1 leading-l",
-    xxl: "font-600 fsize70 md-fsize38 sm-fsize30 my1 leading-x",
-    xl: "font-600 fsize60 md-fsize38 sm-fsize30 my1 leading-h",
-    lg: "font-600 fsize52 md-fsize38 sm-fsize30 my1 leading-l",
-    md: "font-500 fsize36 md-fsize26 sm-fsize20 my1",
-    sm: "font-500 fsize28 md-fsize24 sm-fsize18 my1",
+    xxlsm: "font-600 fsize70 md-fsize40 sm-fsize38 my1 leading-smx",
+    xlsm: "font-600 fsize60 md-fsize38 sm-fsize32 my1 leading-hsm",
+    lgsm: "font-600 fsize48 md-fsize36 sm-fsize28 my1 leading-lsm",
+    xxl: "font-600 fsize70 md-fsize38 sm-fsize34 my1 leading-x",
+    xl: "font-600 fsize60 md-fsize34 sm-fsize30 my1 leading-h",
+    lg: "font-600 fsize48 md-fsize32 sm-fsize24 my1 leading-l",
+    md: "font-600 fsize36 md-fsize26 sm-fsize20 my1 leading-md",
+    sm: "font-600 fsize28 md-fsize24 sm-fsize18 my1 leading-sm",
   };
   const ColorClasses = {
     dark: "textdark",
@@ -44,8 +44,8 @@ const HeadText = ({
     info: "textinfo",
     warning: "textwarning",
     v1: "textprimary",
-    v2: "textwhite px20 py2 rounded-5 bgprimary",
-    v3: "textwhite px20 py2 rounded-5 bgsecondary",
+    v2: "textwhite px14 md-px10 sm-px12 rounded-5 bgprimary",
+    v3: "textwhite px14 md-px10 sm-px12 rounded-5 bgsecondary",
     v4: "textprimary underline",
   };
   const headClass = `${SizeClasses[size] || ""} ${

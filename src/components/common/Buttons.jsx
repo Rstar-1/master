@@ -24,9 +24,9 @@ const Buttons = ({
     dsecondary: "bgsecondary textdark border-0",
   };
   const sizeClasses = {
-    sm: "px16 py6 fsize14",
-    md: "px20 py8 fsize16",
-    lg: "px25 py8 fsize18",
+    sm: "px16 py6 sm-px14 sm-py4 fsize14",
+    md: "px20 py8 sm-px16 sm-py6 fsize16 sm-fsize14",
+    lg: "px25 py8 sm-px18 sm-py6 fsize18 sm-fsize15",
   };
   const roundClasses = {
     sm: "rounded-5",
@@ -64,7 +64,7 @@ const Buttons = ({
       onClick={onClick}
       disabled={disabled}
     >
-      <span>{text}</span>
+      <span className={animation === "v11" ? "" : "relative z-50"}>{text}</span>
     </button>
   );
 };

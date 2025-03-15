@@ -381,7 +381,7 @@ input,
     transform: rotateZ(-45deg) translate(-50%, -50%);
     transition: all 0.3s;
     content: "";
-    z-index: -1;
+    z-index: 0;
   }
   &:hover {
     color: var(--white);
@@ -407,7 +407,7 @@ input,
     transition: all 1s ease;
     transform: scale(0);
     content: "";
-    z-index: -1;
+    z-index: 0;
   }
   &::before {
     top: -8px;
@@ -444,7 +444,7 @@ input,
     left: 0;
     border-radius: 4px !important;
     background: var(--primary);
-    z-index: -1;
+    z-index: 0;
   }
   &::after {
     width: 0;
@@ -570,15 +570,64 @@ input,
 .h-450px {
   width: 100% !important;
   height: 450px !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    height: 350px !important;
+  }
+  @media (max-width: 640px) {
+    height: 300px !important;
+  }
 }
 .h-500px {
   width: 100% !important;
   height: 500px !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    height: 350px !important;
+  }
+  @media (max-width: 640px) {
+    height: 300px !important;
+  }
 }
 .h-600px {
   width: 100% !important;
   height: 600px !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    height: 350px !important;
+  }
+  @media (max-width: 640px) {
+    height: 300px !important;
+  }
 }
+.h-350px {
+  width: 100% !important;
+  height: 350px !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    height: 260px !important;
+  }
+  @media (max-width: 640px) {
+    height: 250px !important;
+  }
+}
+.h-300px {
+  width: 100% !important;
+  height: 300px !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    height: 200px !important;
+  }
+  @media (max-width: 640px) {
+    height: 250px !important;
+  }
+}
+.h-250px {
+  width: 100% !important;
+  height: 200px !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    height: 260px !important;
+  }
+  @media (max-width: 640px) {
+    height: 250px !important;
+  }
+}
+
 
 .filter-1 {
   filter: none !important;
@@ -627,15 +676,6 @@ p {
 .gsap-marker-end {
   opacity: 0;
 }
-.h-image {
-  height: 450px !important;
-  @media (max-width: 912px) and (min-width: 641px) {
-    height: 400px !important;
-  }
-  @media (max-width: 640px) {
-    height: 350px !important;
-  }
-}
 .bg_hero {
   background: url("https://www.primefaces.org/cdn/primereact/images/layout/pattern.png"),
     radial-gradient(50% 50% at center top, #e9e7fd -50%, #fff 100%) !important;
@@ -643,3 +683,21 @@ p {
   background-size: cover;
 }
 /* ======================= End-Maincss ======================= */
+
+/* ======================= Start-AB1 ======================= */
+.ab_pr_100 {
+  height: 100vh !important;
+  @media (max-width: 640px) {
+    height: 100% !important;
+  }
+}
+.h-image {
+  height: 450px !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    height: 400px !important;
+  }
+  @media (max-width: 640px) {
+    height: 320px !important;
+  }
+}
+/* ======================= End-AB1 ======================= */
