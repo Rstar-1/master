@@ -260,6 +260,125 @@ input,
 }
 /* ======================= End-scrollbar ======================= */
 
+/* ======================= Start-Table ======================= */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  border: 1px solid #ececec;
+  text-align: left;
+  padding: 10px;
+}
+th {
+  background: var(--primary2);
+  border: 1px solid #ececec;
+  text-align: left;
+  padding: 8px;
+   @media (max-width:640px) {
+    padding: 8px;
+  }
+}
+tr {
+  background: var(--white);
+}
+tr:nth-child(even):hover {
+  background: var(--tertiary);
+}
+.h-input {
+  height: 35px !important;
+}
+input:focus-visible {
+  outline: none;
+  border: 1px solid var(--primary) !important;
+}
+.side-scroll {
+  height: 82vh !important;
+  overflow-y: auto !important;
+}
+.cust-scroll {
+  height: 82vh !important;
+  overflow-y: auto !important;
+  @media (max-width: 641px) {
+    height: 76vh !important;
+  }
+}
+.side-input {
+  width: 95% !important;
+}
+.wid-sidebar {
+  width: 25% !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    width: 40% !important;
+  }
+  @media (max-width: 640px) {
+    width: 90% !important;
+  }
+}
+.pop-w {
+  width: 30% !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    width: 55% !important;
+  }
+  @media (max-width: 640px) {
+    width: 90% !important;
+  }
+}
+.close {
+  width: 20px !important;
+  height: 20px !important;
+}
+.border-images {
+  border: 1px dashed var(--gray);
+  height: 150px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 10px !important;
+}
+.img-input {
+  width: 100% !important;
+  height: 150px !important;
+  opacity: 0 !important;
+}
+.preview-img {
+  height: 145px !important;
+}
+.table-colsm {
+  min-width: 80px !important;
+}
+.table-collg {
+  min-width: 150px !important;
+}
+.table-w {
+  width: 100% !important;
+  overflow: auto !important;
+}
+.table-w::-webkit-scrollbar {
+  height: 6px !important;
+  background: #fafafa !important;
+  width: 4px !important;
+}
+.table-w::-webkit-scrollbar-thumb {
+  background: #d6d2d2;
+  border-radius: 5px !important;
+}
+.sm-border-none {
+  @media (max-width: 640px) {
+    border: none !important;
+  }
+}
+.table-img {
+  width: 100% !important;
+  height: 40px !important;
+  object-fit: contain !important;
+  @media (max-width: 640px) {
+    height: 50px !important;
+    object-fit: contain !important;
+  }
+}
+/* ======================= End-Table ======================= */
+
 /* ======================= Start-Animate ======================= */
 .click-btn {
   display: flex;

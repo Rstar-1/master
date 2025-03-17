@@ -17,7 +17,7 @@ const Navbar = () => {
     { href: "/frontend", label: "Frontend" },
     { href: "/blogs", label: "Backend" },
     { href: "/section", label: "Section" },
-    { href: "/connect", label: "Digital" },
+    { href: "/digital", label: "Digital" },
   ];
   return (
     <div className="py12 w-full navbar">
