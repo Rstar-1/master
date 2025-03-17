@@ -96,7 +96,7 @@ const Section2 = () => {
         </div>
         <div className="w-50 sm-w-full">
           <div className="w-full ab_pr_100 pin_sec_ab flex items-center">
-            <div className="w-full h-image relative">
+            <div className="w-full h-450px relative">
               {data?.map((item, i) => {
                 return (
                   <Images

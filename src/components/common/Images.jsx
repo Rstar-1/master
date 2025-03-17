@@ -23,9 +23,10 @@ const Images = ({
     v6: "h-250px",
   };
   const imgscales = {
-    v1: "filter-1",
-    v2: "filter-2",
-    v3: "filter-3",
+    v1: "filter-0",
+    v2: "filter-1",
+    v3: "filter-2",
+    v4: "filter-3",
   };
   const imgrounds = {
     v1: "rounded-5",
