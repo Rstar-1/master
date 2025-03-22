@@ -66,27 +66,37 @@ const Section2 = () => {
                     text={e?.subtitle}
                     text2=""
                     text3=""
-                    size="xl"
+                    secid="SA1001"
                     spc=""
+                    size="xxl"
                     color="primary"
+                    custom={false}
+                    brs={false}
                     className="font-500"
                   />
                   <HeadText
                     text={e?.title}
                     text2=""
                     text3=""
+                    secid="SP1002"
                     spc=""
                     heading="head3"
                     size="md"
                     color="gray"
+                    custom={false}
+                    brs={false}
                     className=""
                   />
                   <ParaText
                     text={e?.desc}
                     text2=""
                     text3=""
+                    secid="SA1003"
+                    spc=""
                     size="md"
                     color="gray"
+                    custom={false}
+                    brs={false}
                     className="mtpx8 sm-mtpx5"
                   />
                 </div>

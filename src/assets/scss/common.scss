@@ -1,5 +1,3 @@
-
-
 /* ======================= Start-scrollbar ======================= */
 ::-webkit-scrollbar {
   width: 10px;
@@ -1773,7 +1771,6 @@ input:focus-visible {
 /* ======================= End-Table ======================= */
 
 /* ======================= End-Height ======================= */
-
 .h-600px {
   height: 600px !important;
   @media (max-width: 912px) and (min-width: 641px) {
@@ -1828,7 +1825,6 @@ input:focus-visible {
     height: 250px !important;
   }
 }
-
 /* ======================= End-Height ======================= */
 
 /* ======================= Start-Common ======================= */
@@ -1919,7 +1915,7 @@ p {
 .leading-x {
   line-height: 99px !important;
 }
-.leading-xsm {
+.leading-smx {
   line-height: 99px !important;
 }
 .leading-h {
@@ -1938,7 +1934,7 @@ p {
   line-height: 60px !important;
 }
 .leading-sm {
-  line-height: 50px !important;
+  line-height: 45px !important;
 }
 .leading-s {
   line-height: 30px !important;

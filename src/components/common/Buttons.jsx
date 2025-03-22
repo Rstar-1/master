@@ -54,6 +54,7 @@ const Buttons = ({
     animationClasses[animation]
   } ${className}
   cursor-pointer click-btn`;
+  
   return (
     <button
       className={

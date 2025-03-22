@@ -2,13 +2,15 @@ import React from "react";
 
 const ParaText = ({
   text,
-  text2,
-  text3,
+  text2 = "",
+  text3 = "",
   secid = "",
   size = "",
   color = "",
   spc = "",
   brs = false,
+  custom = false,
+  status = true,
   className = "",
 }) => {
   const SizeClasses = {
@@ -41,22 +43,31 @@ const ParaText = ({
     v2: "textwhite px12 sm-px8 py2 rounded-5 bgprimary",
     v3: "textwhite px12 sm-px8 py2 rounded-5 bgsecondary",
   };
-  const paraClass = `${SizeClasses[size] || ""} ${
-    ColorClasses[color] || ""
-  } ${className}`;
+  const paraClass =
+    custom === false
+      ? `${SizeClasses[size] || ""} ${
+          ColorClasses[color] || ""
+        } ${className}`.trim()
+      : `${className}`;
   const spanClass = `${SpanClasses[spc]}`;
 
   return (
     <>
-      <p className={paraClass} id={secid}>
-        {text.length > 0 ? text : null}
-        {brs ? <br></br> : null}
-        {text2.length > 0 ? (
-          <span className={`${spanClass} ${brs ? "" : "mx8"}`}>{text2}</span>
-        ) : null}
-        {brs ? <br></br> : null}
-        {text3.length > 0 ? text3 : null}
-      </p>
+      {status ? (
+        <>
+          <p className={paraClass} id={secid}>
+            {text.length > 0 ? text : null}
+            {brs ? <br></br> : null}
+            {text2.length > 0 ? (
+              <span className={`${spanClass} ${brs ? "" : "mx8"}`}>
+                {text2}
+              </span>
+            ) : null}
+            {brs ? <br></br> : null}
+            {text3.length > 0 ? text3 : null}
+          </p>
+        </>
+      ) : null}
     </>
   );
 };

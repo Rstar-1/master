@@ -10,6 +10,8 @@ const HeadText = ({
   color = "",
   spc = "",
   brs = false,
+  custom = false,
+  status = true,
   className = "",
 }) => {
   const SizeClasses = {
@@ -21,6 +23,11 @@ const HeadText = ({
     lg: "font-600 fsize48 md-fsize32 sm-fsize24 my1 leading-l",
     md: "font-600 fsize36 md-fsize26 sm-fsize20 my1 leading-md",
     sm: "font-600 fsize28 md-fsize24 sm-fsize18 my1 leading-sm",
+    sxxl: "font-600 fsize70 md-fsize38 sm-fsize34 my1",
+    sxl: "font-600 fsize60 md-fsize34 sm-fsize30 my1",
+    slg: "font-600 fsize48 md-fsize32 sm-fsize24 my1",
+    smd: "font-600 fsize36 md-fsize26 sm-fsize20 my1",
+    ssm: "font-600 fsize28 md-fsize24 sm-fsize18 my1",
   };
   const ColorClasses = {
     dark: "textdark",
@@ -48,67 +55,84 @@ const HeadText = ({
     v3: "textwhite px14 md-px10 sm-px12 rounded-5 bgsecondary",
     v4: "textprimary underline",
   };
-  const headClass = `${SizeClasses[size] || ""} ${
-    ColorClasses[color] || ""
-  } ${className}`;
+  const headClass =
+    custom === false
+      ? `${SizeClasses[size] || ""} ${
+          ColorClasses[color] || ""
+        } ${className}`.trim()
+      : `${className}`;
   const spanClass = `${SpanClasses[spc]}`;
 
   return (
     <>
-      {heading === "head2" ? (
-        <h2 className={headClass} id={secid}>
-          {text.length > 0 ? text : null}
-          {brs ? <br></br> : null}
-          {text2.length > 0 ? (
-            <span className={`${spanClass} ${brs ? "" : "mx8"}`}>{text2}</span>
+      {status ? (
+        <>
+          {heading === "head2" ? (
+            <h2 className={headClass} id={secid}>
+              {text.length > 0 ? text : null}
+              {brs ? <br></br> : null}
+              {text2.length > 0 ? (
+                <span className={`${spanClass} ${brs ? "" : "mx8"}`}>
+                  {text2}
+                </span>
+              ) : null}
+              {brs ? <br></br> : null}
+              {text3.length > 0 ? text3 : null}
+            </h2>
           ) : null}
-          {brs ? <br></br> : null}
-          {text3.length > 0 ? text3 : null}
-        </h2>
-      ) : null}
-      {heading === "head3" ? (
-        <h3 className={headClass} id={secid}>
-          {text.length > 0 ? text : null}
-          {brs ? <br></br> : null}
-          {text2.length > 0 ? (
-            <span className={`${spanClass} ${brs ? "" : "mx8"}`}>{text2}</span>
+          {heading === "head3" ? (
+            <h3 className={headClass} id={secid}>
+              {text.length > 0 ? text : null}
+              {brs ? <br></br> : null}
+              {text2.length > 0 ? (
+                <span className={`${spanClass} ${brs ? "" : "mx8"}`}>
+                  {text2}
+                </span>
+              ) : null}
+              {brs ? <br></br> : null}
+              {text3.length > 0 ? text3 : null}
+            </h3>
           ) : null}
-          {brs ? <br></br> : null}
-          {text3.length > 0 ? text3 : null}
-        </h3>
-      ) : null}
-      {heading === "head4" ? (
-        <h4 className={headClass} id={secid}>
-          {text.length > 0 ? text : null}
-          {brs ? <br></br> : null}
-          {text2.length > 0 ? (
-            <span className={`${spanClass} ${brs ? "" : "mx8"}`}>{text2}</span>
+          {heading === "head4" ? (
+            <h4 className={headClass} id={secid}>
+              {text.length > 0 ? text : null}
+              {brs ? <br></br> : null}
+              {text2.length > 0 ? (
+                <span className={`${spanClass} ${brs ? "" : "mx8"}`}>
+                  {text2}
+                </span>
+              ) : null}
+              {brs ? <br></br> : null}
+              {text3.length > 0 ? text3 : null}
+            </h4>
           ) : null}
-          {brs ? <br></br> : null}
-          {text3.length > 0 ? text3 : null}
-        </h4>
-      ) : null}
-      {heading === "head5" ? (
-        <h5 className={headClass} id={secid}>
-          {text.length > 0 ? text : null}
-          {brs ? <br></br> : null}
-          {text2.length > 0 ? (
-            <span className={`${spanClass} ${brs ? "" : "mx8"}`}>{text2}</span>
+          {heading === "head5" ? (
+            <h5 className={headClass} id={secid}>
+              {text.length > 0 ? text : null}
+              {brs ? <br></br> : null}
+              {text2.length > 0 ? (
+                <span className={`${spanClass} ${brs ? "" : "mx8"}`}>
+                  {text2}
+                </span>
+              ) : null}
+              {brs ? <br></br> : null}
+              {text3.length > 0 ? text3 : null}
+            </h5>
           ) : null}
-          {brs ? <br></br> : null}
-          {text3.length > 0 ? text3 : null}
-        </h5>
-      ) : null}
-      {heading === "head6" ? (
-        <h6 className={headClass} id={secid}>
-          {text.length > 0 ? text : null}
-          {brs ? <br></br> : null}
-          {text2.length > 0 ? (
-            <span className={`${spanClass} ${brs ? "" : "mx8"}`}>{text2}</span>
+          {heading === "head6" ? (
+            <h6 className={headClass} id={secid}>
+              {text.length > 0 ? text : null}
+              {brs ? <br></br> : null}
+              {text2.length > 0 ? (
+                <span className={`${spanClass} ${brs ? "" : "mx8"}`}>
+                  {text2}
+                </span>
+              ) : null}
+              {brs ? <br></br> : null}
+              {text3.length > 0 ? text3 : null}
+            </h6>
           ) : null}
-          {brs ? <br></br> : null}
-          {text3.length > 0 ? text3 : null}
-        </h6>
+        </>
       ) : null}
     </>
   );

@@ -10,18 +10,25 @@ const Section1 = () => {
           text="All Digitals"
           text2=""
           text3=""
+          secid="HR1002"
+          spc=""
           size="md"
           color="gray"
+          custom={false}
+          brs={false}
           className=""
         />
         <HeadText
           text="Digital"
           text2="Systems"
           text3=""
+          secid="HR1002"
           spc="v1"
           heading="head4"
           size="sm"
           color="gray"
+          custom={false}
+          brs={false}
           className=""
         />
         <div className="mtpx20 table-w">

@@ -13,27 +13,37 @@ const HeroSection = () => {
           text="Our Service"
           text2=""
           text3=""
-          size="xxl"
+          secid="HR1001"
           spc=""
+          size="xxl"
           color="primary"
+          custom={false}
+          brs={false}
           className="font-500 flex justify-center sm-justify-start"
         />
         <HeadText
           text="Designing"
           text2="Better world"
           text3="and Care"
+          secid="HR1002"
           spc="v1"
           heading="head2"
           size="xlsm"
           color="gray"
+          custom={false}
+          brs={false}
           className="text-center sm-text-left"
         />
         <ParaText
           text="Lorem ipsum is a text graphic design, publishing, and web development to fill dummy or placeholder text commonly used in graphic design."
           text2=""
           text3=""
+          secid="HR1002"
+          spc=""
           size="md"
           color="gray"
+          custom={false}
+          brs={false}
           className="text-center sm-text-left mtpx20 md-mtpx16 sm-mtpx8 w-70 md-w-80 sm-w-full mx-auto"
         />
         <div className="flex justify-center sm-justify-start items-center gap-12 mtpx28 md-mtpx20 sm-mtpx18">
@@ -68,30 +78,40 @@ const HeroSection = () => {
         <div className="flex sm-block gap-12 items-center">
           <div className="w-50 md-w-50 sm-w-full prpx10 md-prpx8 sm-prpx1">
             <SmallText
-              text=""
-              text2="Know More"
+              text="Our Service"
+              text2=""
               text3=""
-              size="xl"
+              secid="HR2001"
               spc=""
+              size="xxl"
               color="primary"
+              custom={false}
+              brs={false}
               className="font-500"
             />
             <HeadText
-              text="Designing of the Better"
-              text2="and care"
+              text="Designing world"
+              text2="Better care"
               text3=""
+              secid="HR2002"
               spc="v2"
-              heading="head5"
+              heading="head2"
               size="xlsm"
               color="gray"
-              className="mtpx8"
+              custom={false}
+              brs={true}
+              className=""
             />
             <ParaText
               text="Lorem ipsum is a text graphic design, publishing, and web development to fill dummy or placeholder text commonly used in graphic design."
               text2=""
               text3=""
+              secid="HR2003"
+              spc=""
               size="md"
               color="gray"
+              custom={false}
+              brs={false}
               className="mtpx16 sm-mtpx10"
             />
             <div className="flex items-center gap-12 mtpx28 md-mtpx20 sm-mtpx16">
@@ -100,7 +120,7 @@ const HeroSection = () => {
                 color="primary"
                 round="sm"
                 size="lg"
-                animation=""
+                animation="v5"
                 className="font-400"
               />
               <Buttons
@@ -121,6 +141,7 @@ const HeroSection = () => {
               imgScale="v1"
               imgRound="v2"
               alt="Hersection"
+              className="w-full"
             />
           </div>
         </div>
