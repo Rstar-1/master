@@ -5,6 +5,9 @@
 ::-webkit-scrollbar-thumb {
   background: #ececec !important;
 }
+.newscroll::-webkit-scrollbar {
+  width: 0px;
+}
 /* ======================= End-scrollbar ======================= */
 
 /* ======================= Start-Container ======================= */

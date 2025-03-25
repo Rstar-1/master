@@ -8,6 +8,7 @@ const Buttons = ({
   animation = "",
   className = "",
   disabled = false,
+  types = false,
 }) => {
   const colorClasses = {
     primary: "bgprimary textwhite border-0",
@@ -54,7 +55,7 @@ const Buttons = ({
     animationClasses[animation]
   } ${className}
   cursor-pointer click-btn`;
-  
+
   return (
     <button
       className={
@@ -64,6 +65,7 @@ const Buttons = ({
       }
       onClick={onClick}
       disabled={disabled}
+      type={types ? "submit" : null}
     >
       <span className={animation === "v11" ? "" : "relative z-50"}>{text}</span>
     </button>
