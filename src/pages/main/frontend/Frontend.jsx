@@ -1,16 +1,16 @@
 import React from "react";
 import ParaText from "../../../components/common/ParaText";
 
-const Digigtal = () => {
+const Frontend = () => {
   const MainData = [
     { href: "/mine", label: "Dashboard" },
     { href: "/builder", label: "Analytics" },
   ];
   const MainDatas = [
-    { href: "/frontend", label: "Schemas" },
-    { href: "/backend", label: "Controller" },
-    { href: "/backend", label: "Services" },
-    { href: "/section", label: "Routes" },
+      { href: "/backend", label: "API" },
+      { href: "/section", label: "Routes" },
+      { href: "/backend", label: "Pages" },
+      { href: "/frontend", label: "Components" },
   ];
   return (
     <div className="bg_hero py20 px40">
@@ -214,4 +214,4 @@ const Digigtal = () => {
   );
 };
 
-export default Digigtal;
+export default Frontend;

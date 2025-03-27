@@ -15,13 +15,26 @@ const Navbar = () => {
     { href: "/mine", label: "Mines" },
     { href: "/builder", label: "Builder" },
     { href: "/frontend", label: "Frontend" },
-    { href: "/blogs", label: "Backend" },
+    { href: "/backend", label: "Backend" },
     { href: "/section", label: "Section" },
     { href: "/digital", label: "Digital" },
   ];
   return (
     <div className="py12 w-full navbar">
-      <div className="container mx-auto">
+      <div
+        className={
+          [
+            "/home",
+            "/about",
+            "/service",
+            "/project",
+            "/blogs",
+            "/connect",
+          ]?.includes(window.location.pathname)
+            ? "container mx-auto"
+            : "px40"
+        }
+      >
         <div className="flex items-center justify-between">
           <h1 className="font-500 fsize20 textgray my1">
             Bara<span className="textprimary mlpx2">Singha</span>

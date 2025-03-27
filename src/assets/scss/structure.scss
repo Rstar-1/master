@@ -19882,6 +19882,9 @@
 /* ======================= End-Font-Weight ======================= */
 
 /* ======================= Start-width ======================= */
+.w-5 {
+  width: 5% !important;
+}
 .w-10 {
   width: 10% !important;
 }
@@ -19946,6 +19949,9 @@
   width: max-content !important;
 }
 @media (max-width: 1224px) and (min-width: 913px) {
+  .lp-w-5 {
+    width: 5% !important;
+  }
   .lp-w-10 {
     width: 10% !important;
   }
@@ -20005,6 +20011,9 @@
   }
 }
 @media (max-width: 912px) and (min-width: 641px) {
+  .md-w-5 {
+    width: 5% !important;
+  }
   .md-w-10 {
     width: 10% !important;
   }
@@ -20064,6 +20073,9 @@
   }
 }
 @media (max-width: 640px) {
+  .sm-w-5 {
+    width: 5% !important;
+  }
   .sm-w-10 {
     width: 10% !important;
   }

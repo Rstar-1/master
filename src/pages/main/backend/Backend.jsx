@@ -1,7 +1,7 @@
 import React from "react";
 import ParaText from "../../../components/common/ParaText";
 
-const Digigtal = () => {
+const Backend = () => {
   const MainData = [
     { href: "/mine", label: "Dashboard" },
     { href: "/builder", label: "Analytics" },
@@ -214,4 +214,4 @@ const Digigtal = () => {
   );
 };
 
-export default Digigtal;
+export default Backend;
