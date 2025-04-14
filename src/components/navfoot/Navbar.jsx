@@ -14,8 +14,8 @@ const Navbar = () => {
   const MainData = [
     { href: "/mine", label: "Mines" },
     { href: "/builder", label: "Builder" },
-    { href: "/frontend", label: "Frontend" },
-    { href: "/backend", label: "Backend" },
+    { href: "/frontend", label: "Website" },
+    { href: "/backend", label: "Coding" },
     { href: "/section", label: "Section" },
     { href: "/digital", label: "Digital" },
   ];

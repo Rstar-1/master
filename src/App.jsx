@@ -7,6 +7,7 @@ import Backend from "./pages/main/backend/Backend";
 import Frontend from "./pages/main/frontend/Frontend";
 import Builder from "./pages/main/builder/Builder";
 import Section from "./pages/main/section/Section";
+import Mines from "./pages/main/mines/Mines";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/backend" element={<Backend />} />
         <Route path="/builder" element={<Builder />} />
         <Route path="/section" element={<Section />} />
+        <Route path="/mine" element={<Mines />} />
         <Route path="/digital" element={<Digital />} />
       </Routes>
       <Footer />

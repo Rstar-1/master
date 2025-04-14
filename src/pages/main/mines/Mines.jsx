@@ -1,50 +1,20 @@
 import React from "react";
 import ParaText from "../../../components/common/ParaText";
-import Dashboard from "./components/Dashboard";
 
-const Frontend = () => {
+const Mines = () => {
   const MainData = [
     { href: "/mine", label: "Dashboard" },
-    { href: "/mine", label: "Structure" },
+    { href: "/builder", label: "Analytics" },
   ];
   const MainDatas = [
-    { href: "/backend", label: "API" },
+    { href: "/frontend", label: "Schemas" },
+    { href: "/backend", label: "Controller" },
+    { href: "/backend", label: "Services" },
     { href: "/section", label: "Routes" },
-    { href: "/backend", label: "Pages" },
-    { href: "/frontend", label: "Components" },
   ];
   return (
     <div className="bg_hero py20 px40">
-      <div className="bgwhite b-shadow rounded-5 py10 px20">
-        <div className="flex items-center justify-between">
-          <ParaText
-            text="Barasingha > Website >"
-            text2="Dashboard"
-            text3=""
-            secid="HR1002"
-            spc="primary"
-            size="md"
-            color="gray"
-            custom={false}
-            brs={false}
-            className="font-500 "
-          />
-          <svg
-            viewBox="0 0 24 24"
-            width="16"
-            height="16"
-            stroke="gray"
-            stroke-width="2"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            className="flex"
-          >
-            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-          </svg>
-        </div>
-      </div>
-      <div className="flex w-full gap-12 mtpx20">
+      <div className="flex items-start w-full gap-12">
         <div className="w-20 bgwhite b-shadow rounded-5">
           <div className="px17 py15">
             <div className="grid-cols-1 gap-8">
@@ -148,11 +118,12 @@ const Frontend = () => {
           </div>
         </div>
         <div className="w-80">
-          <Dashboard />
+           <div className="bgwhite b-shadow p30 rounded-5"></div>
+           <div className="bgwhite b-shadow h-450px rounded-5 mtpx15"></div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Frontend;
+export default Mines;

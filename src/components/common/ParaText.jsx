@@ -59,7 +59,7 @@ const ParaText = ({
             {text.length > 0 ? text : null}
             {brs ? <br></br> : null}
             {text2.length > 0 ? (
-              <span className={`${spanClass} ${brs ? "" : "mx8"}`}>
+              <span className={`${spanClass} ${brs ? "" : "mx4"}`}>
                 {text2}
               </span>
             ) : null}
