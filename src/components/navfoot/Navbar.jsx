@@ -11,69 +11,24 @@ const Navbar = () => {
     { href: "/blogs", label: "Blogs" },
     { href: "/connect", label: "Connect" },
   ];
-  const MainData = [
-    { href: "/mine", label: "Mines" },
-    { href: "/builder", label: "Builder" },
-    { href: "/frontend", label: "Website" },
-    { href: "/backend", label: "Coding" },
-    { href: "/section", label: "Section" },
-    { href: "/digital", label: "Digital" },
-  ];
   return (
     <div className="py12 w-full navbar">
-      <div
-        className={
-          [
-            "/home",
-            "/about",
-            "/service",
-            "/project",
-            "/blogs",
-            "/connect",
-          ]?.includes(window.location.pathname)
-            ? "container mx-auto"
-            : "px40"
-        }
-      >
+      <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <h1 className="font-500 fsize20 textgray my1">
-            Bara<span className="textprimary mlpx2">Singha</span>
+            RAJ<span className="textprimary mlpx2">Shetye</span>
           </h1>
           <div className="flex md-hidden sm-hidden items-center gap-12 mrpx15">
-            {[
-              "/home",
-              "/about",
-              "/service",
-              "/project",
-              "/blogs",
-              "/connect",
-            ]?.includes(window.location.pathname) ? (
-              <>
-                {NavData.map((e, index) => (
-                  <NavLink
-                    key={index}
-                    to={e?.href}
-                    className="activetext font-400 mx12 fsize14"
-                    activeClassName="active"
-                  >
-                    {e?.label}
-                  </NavLink>
-                ))}
-              </>
-            ) : (
-              <>
-                {MainData.map((e, index) => (
-                  <NavLink
-                    key={index}
-                    to={e?.href}
-                    className="activetext font-400 mx12 fsize14"
-                    activeClassName="active"
-                  >
-                    {e?.label}
-                  </NavLink>
-                ))}
-              </>
-            )}
+            {NavData.map((e, index) => (
+              <NavLink
+                key={index}
+                to={e?.href}
+                className="activetext font-400 mx12 fsize14"
+                activeClassName="active"
+              >
+                {e?.label}
+              </NavLink>
+            ))}
           </div>
           <Buttons
             text="Get Started"
