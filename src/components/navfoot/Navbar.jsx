@@ -8,7 +8,6 @@ const Navbar = () => {
     { href: "/about", label: "About" },
     { href: "/service", label: "Service" },
     { href: "/project", label: "Project" },
-    { href: "/blogs", label: "Blogs" },
     { href: "/connect", label: "Connect" },
   ];
   return (
@@ -24,7 +23,7 @@ const Navbar = () => {
                 key={index}
                 to={e?.href}
                 className="activetext font-400 mx12 fsize14"
-                activeClassName="active"
+                activeClass="active"
               >
                 {e?.label}
               </NavLink>

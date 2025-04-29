@@ -23,10 +23,10 @@ const HeadSec = ({ text = "", text2 = "", text3 = "", version = "" }) => {
               text2=""
               text3=""
               spc=""
-              heading="head6"
-              size="sm"
+              heading="head5"
+              size="ssm"
               color="gray"
-              className=""
+              className="leading mtpx4"
             />
           </div>
           <Buttons

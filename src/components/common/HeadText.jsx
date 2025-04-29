@@ -28,6 +28,7 @@ const HeadText = ({
     slg: "font-600 fsize48 md-fsize32 sm-fsize24 my1",
     smd: "font-600 fsize36 md-fsize26 sm-fsize20 my1",
     ssm: "font-600 fsize28 md-fsize24 sm-fsize18 my1",
+    card: "font-600 fsize22 md-fsize20 sm-fsize18 my1",
   };
   const ColorClasses = {
     dark: "textdark",

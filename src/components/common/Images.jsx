@@ -6,6 +6,7 @@ const Images = ({
   imgScale = "",
   imgRound = "",
   className = "",
+  custom = false,
   secID,
   source,
 }) => {
@@ -33,19 +34,15 @@ const Images = ({
     v2: "rounded-10",
     v3: "rounded-full",
   };
-  const imgStructure = `${imgClasses[imgfit] || ""} ${
-    imgHeights[imgHeight] || ""
-  } ${imgscales[imgScale] || ""} ${imgrounds[imgRound] || ""} ${
-    className || ""
-  }`;
+  const imgStructure =
+    custom === false
+      ? `${imgClasses[imgfit] || ""} ${imgHeights[imgHeight] || ""} ${
+          imgscales[imgScale] || ""
+        } ${imgrounds[imgRound] || ""} ${className || ""}`.trim()
+      : `${className}`;
 
   return (
-    <img
-      src={source}
-      alt="Banner"
-      className={`${imgStructure}`}
-      id={secID}
-    />
+    <img src={source} alt="Banner" className={`${imgStructure}`} id={secID} />
   );
 };
 
